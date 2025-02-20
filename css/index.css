@@ -1,0 +1,336 @@
+/* Content: */
+
+body > #main > #main_middle > #content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#content > div {
+    overflow: hidden;
+}
+
+/* Info: */
+
+#content > #info_block {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+}
+
+#content > #info_block > img {
+    width: 100%;
+}
+
+#content > #info_block > #name_title {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#content > #info_block > #name_title > #name {
+    margin-top: 20px;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-strong);
+    font-size: var(--font-size-Large);
+}
+
+#content > #info_block > #name_title > #name > div {
+    height: var(--font-size-Large);
+}
+
+#content > #info_block > #name_title > #name > #last_name {
+    font-weight: bold;
+}
+
+#content > #info_block > #name_title > #title {
+    margin-top: 10px;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-strong);
+    font-size: var(--font-size-small);
+    border-radius: 10px;
+    background-color: var(--col-fill);
+    color: var(--col-text-weak);
+    padding: 5px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#content > #info_block > #name_title > #title > div {
+    flex: none;
+}
+
+#content > #info_block > #key_info {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#content > #info_block > #key_info > div {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#content > #info_block > #key_info > div > img {
+    width: 25px;
+}
+
+#content > #info_block > #key_info > div > div {
+    margin-left: 20px;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-normal);
+    color: var(--col-text-weak);
+}
+
+#content > #info_block > #key_info > #email_info > #show_email_box {
+    background-color: var(--col-fill);
+    border-radius: 5px;
+    border: 1px solid var(--col-stroke-strong);
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    text-shadow: var(--raise-text-low);
+    box-shadow: var(--lower-low), var(--raise-Low-trans);
+}
+
+#content > #info_block > #key_info > #email_info > #show_email_box:hover:not(:active) {
+    box-shadow: var(--lower-low-trans), var(--raise-Low);
+    text-shadow: none;
+}
+
+#content > #info_block > #key_info > #email_box {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 0;
+    display: none;
+    opacity: 0;
+    transition: display 2s ease-out, opacity 2s ease-out;
+    background-color: var(--col-fill);
+    border: 1px solid var(--col-stroke-strong);
+    border-radius: 5px;
+    box-shadow: var(--lower-low), var(--raise-Low-trans);
+    transition: all 0.25s ease-out;
+}
+
+#content > #info_block > #key_info > #email_box:hover:not(:active) {
+    box-shadow: var(--lower-low-trans), var(--raise-Low);
+    text-shadow: none;
+}
+
+#content > #info_block > #key_info > #email_box > a {
+    margin-left: 0;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-normal);
+    color: var(--col-text-weak);
+    text-shadow: var(--raise-text-low);
+    text-decoration: none;
+}
+
+#content > #info_block > #link_logos {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#content > #info_block > #link_logos > a {
+    text-decoration: none;
+    /* flex-shrink: 1; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30px;
+}
+
+#content > #info_block > #link_logos > a > img {
+    width: 30px;
+    position: relative;
+}
+
+#content > #info_block > #link_logos > a > img.col {
+    z-index: 0;
+    left: -30px;
+}
+
+#content > #info_block > #link_logos > a > img.b-w {
+    z-index: 1;
+    transition: opacity 0.25s ease-out;
+}
+
+#content > #info_block > #link_logos > a > img.b-w:hover {
+    opacity: 0;
+}
+
+/* About: */
+
+#content > #about_block {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-left: 100px;
+    padding-block: 20px;
+    padding-inline: 40px;
+    margin-top: 50px;
+}
+
+#content > #about_block > div {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#content > #about_block > div > .about-par {
+    flex: auto;
+}
+
+#content > #about_block p {
+    margin: 0;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-normal);
+    color: var(--col-text-weak);
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+#content > #about_block > #design_experience > .asic {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#content > #about_block > #design_experience .asic_info {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+#content > #about_block > #design_experience > .asic > img {
+    width: 30%;
+}
+
+#content > #about_block > #design_experience > .long_aspect {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content > #about_block > #design_experience > .long_aspect > img {
+    width: 20%;
+}
+
+#content > #about_block > #design_experience > .long_aspect > div {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+#content > #about_block > #design_experience > .asic > .asic_info > .asic_info_row,
+#content > #about_block > #design_experience > .long_aspect .asic > .asic_info > .asic_info_row {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-block: 3px;
+}
+
+#content > #about_block > #design_experience .asic_info_row > img {
+    flex: none;
+    width: 20px;
+}
+
+#content > #about_block > #design_experience .asic_info_row > div {
+    flex: none;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-small);
+    color: var(--col-text-weak);
+    margin-left: 20px;
+}
+
+#content > #about_block > #patents > .about_patent {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content > #about_block > #patents > .about_patent > img {
+    width: 60%;
+}
+
+#content > #about_block > #patents > .about_patent > .patent_country_list {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+#content > #about_block > #patents > .about_patent > .patent_country_list > .patent_country {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-block: 3px;
+}
+
+#content > #about_block > #patents > .about_patent > .patent_country_list > .patent_country > img {
+    width: 20px;
+}
+
+#content > #about_block > #patents > .about_patent > .patent_country_list > .patent_country > div {
+    margin-left: 10px;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-small);
+    color: var(--col-text-weak);
+}

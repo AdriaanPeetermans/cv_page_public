@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="45"
+   height="45"
+   viewBox="0 0 11.90625 11.90625"
+   version="1.1"
+   id="svg2260"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="strava_bw.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2262"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="6.5935122"
+     inkscape:cx="26.465409"
+     inkscape:cy="20.095511"
+     inkscape:window-width="1312"
+     inkscape:window-height="847"
+     inkscape:window-x="62"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g3919" />
+  <defs
+     id="defs2257">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3883">
+      <circle
+         r="48.310192"
+         cy="460.14056"
+         cx="-33.987679"
+         id="circle3885"
+         style="opacity:1;fill:#76a7fa;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3883-5">
+      <circle
+         r="48.310192"
+         cy="460.14056"
+         cx="-33.987679"
+         id="circle3885-4"
+         style="opacity:1;fill:#76a7fa;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       style="fill:#2c3e50;fill-opacity:1;stroke-width:11.5554"
+       transform="matrix(0.08653928,0,0,0.08653928,-7.4052314,-31.637433)"
+       id="g3919">
+      <path
+         id="path3898"
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:30.5738;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+         d="m 181.59512,444.15792 h -22.29115 l -12.1791,-29.17859 -12.1791,29.17859 h -22.29115 l 34.47025,-70.92957 z"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path3903"
+         style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:30.5738;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+         d="m 181.59512,444.15792 h 14.4738 l -24.43702,51.36507 -24.43702,-51.36507 h 14.4738 l 9.96322,21.89427 z"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccc" />
+    </g>
+  </g>
+</svg>

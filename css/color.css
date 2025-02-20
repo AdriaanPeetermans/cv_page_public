@@ -1,0 +1,25 @@
+.raise {
+    /* --raise-Low: 0.8px 1.6px 1.6px hsl(0deg 0% 0% / 0.48); */
+    --raise-Low: rgba(50, 50, 50, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --raise-Low-trans: transparent 0px 2px 5px -1px, transparent 0px 1px 3px -1px;
+    --raise-low: 1.6px 3.2px 3.2px hsl(0deg 0% 0% / 0.45);
+    --raise-high: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    --lower-low: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.15);
+    --lower-low-trans: inset 1px 1px 5px 1px transparent;
+    --raise-text-low: 1px 1px 1px hsl(0deg 0% 0% / 0.15);
+    --raise-text-low-trans: 1px 1px 1px transparent;
+}
+
+.black-white {
+    --col-brand: #1A1A1A;
+    --col-brand-alpha: rgba(26, 26, 26, 0.9);
+    --col-background: #FFFFFF;
+    --col-text-strong: #1A1A1A;
+    --col-text-weak: #666666;
+    --col-stroke-strong: #808080;
+    --col-stroke-weak: #e6e6e6;
+    --col-fill: #f2f2f2;
+    --col-fill-alpha: rgba(242, 242, 242, 0.5);
+    /* Opaque colors: */
+    --col-brand-60: rgba(26, 26, 26, 0.6);
+}

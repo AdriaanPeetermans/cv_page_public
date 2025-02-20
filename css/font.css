@@ -1,0 +1,10 @@
+.courier {
+    --font-strong: Courier;
+    --font-weak: "Trebuchet MS";
+    --font-fallback: serif;
+    --font-size-Large: 30px;
+    --font-size-large: 20px;
+    --font-size-normal: 14px;
+    --font-size-small: 12px;
+    --font-size-Small: 10px;
+}

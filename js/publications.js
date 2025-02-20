@@ -1,0 +1,3 @@
+function loadScript() {
+    return null;
+}

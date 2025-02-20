@@ -1,0 +1,270 @@
+/* Content: */
+
+#content > #main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-block: 20px;
+    padding-inline: 40px;
+}
+
+#content > #main_content > .photo-paragraph:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* Photo roll: */
+
+.paragraph > .photo-roll {
+    flex: auto;
+    width: calc(100% + 80px);
+    margin-inline: -40px;
+    height: 250px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.paragraph > .photo-roll > .photo {
+    flex: none;
+    height: 100%;
+    border-radius: 5px;
+    margin-inline: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.paragraph > .photo-roll > .photo:first-child {
+    margin-left: 40px;
+}
+
+.paragraph > .photo-roll > .photo:last-child {
+    margin-right: 40px;
+}
+
+.paragraph > .photo-roll > .photo > img {
+    flex: none;
+    height: 100%;
+}
+
+.paragraph > .photo-roll > .photo > .meta-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--col-fill-alpha);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    transition: transform 0.25s ease-out;
+    transform: translateX(-100%);
+}
+
+.paragraph > .photo-roll > .photo > .meta-bar.hover {
+    transform: translateX(0);
+}
+
+.paragraph > .photo-roll > .photo > .meta-bar > .meta-row {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline: 10px;
+}
+
+.paragraph > .photo-roll > .photo > .meta-bar > .meta-row > svg {
+    flex: none;
+    width: 25px;
+    height: 25px;
+}
+
+.paragraph > .photo-roll > .photo > .meta-bar > .meta-row > svg rect,
+.paragraph > .photo-roll > .photo > .meta-bar > .meta-row > svg path,
+.paragraph > .photo-roll > .photo > .meta-bar > .meta-row > svg line,
+.paragraph > .photo-roll > .photo > .meta-bar > .meta-row > svg ellipse,
+.paragraph > .photo-roll > .photo > .meta-bar > .meta-row > svg circle {
+    stroke: var(--col-background);
+    fill: var(--col-background);
+}
+
+.paragraph > .photo-roll > .photo > .meta-bar > .meta-row > div {
+    flex: none;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-normal);
+    color: var(--col-background);
+    margin-left: 10px;
+}
+
+/* Enlarged photo: */
+
+#enlarge_photo {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--col-brand-alpha);
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#enlarge_photo > #enlarge_photo_container {
+    flex: none;
+    max-height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+#enlarge_photo > #enlarge_photo_container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#enlarge_photo > #enlarge_photo_container > #enlarge_photo_meta {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--col-fill-alpha);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    padding-block: 3px;
+    transition: transform 0.25s ease-out;
+    transform: translateY(100%);
+}
+
+#enlarge_photo > #enlarge_photo_container > #enlarge_photo_meta > .enlarge-photo-meta-col {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#enlarge_photo > #enlarge_photo_container > #enlarge_photo_meta > .enlarge-photo-meta-col:not(:last-child) {
+    margin-right: 15px;
+}
+
+#enlarge_photo > #enlarge_photo_container > #enlarge_photo_meta > .enlarge-photo-meta-col > svg {
+    flex: none;
+    width: 25px;
+    height: 25px;
+}
+
+#enlarge_photo > #enlarge_photo_container > #enlarge_photo_meta > .enlarge-photo-meta-col > svg rect,
+#enlarge_photo > #enlarge_photo_container > #enlarge_photo_meta > .enlarge-photo-meta-col > svg path,
+#enlarge_photo > #enlarge_photo_container > #enlarge_photo_meta > .enlarge-photo-meta-col > svg line,
+#enlarge_photo > #enlarge_photo_container > #enlarge_photo_meta > .enlarge-photo-meta-col > svg ellipse,
+#enlarge_photo > #enlarge_photo_container > #enlarge_photo_meta > .enlarge-photo-meta-col > svg circle {
+    stroke: var(--col-text-strong);
+    fill: var(--col-text-strong);
+}
+
+#enlarge_photo > #enlarge_photo_container > #enlarge_photo_meta > .enlarge-photo-meta-col > div {
+    flex: none;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-normal);
+    color: var(--col-text-strong);
+    margin-left: 5px;
+}
+
+#enlarge_photo > #enlarge_close_container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#enlarge_photo > #enlarge_close_container > #enlarge_close {
+    width: 100%;
+}
+
+#enlarge_photo > #enlarge_next_container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 40px;
+    cursor: pointer;
+    transform: translate(0, -50%);
+}
+
+#enlarge_photo > #enlarge_next_container > #enlarge_next {
+    width: 100%;
+}
+
+#enlarge_photo > #enlarge_previous_container {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 40px;
+    cursor: pointer;
+    transform: translate(0, -50%);
+}
+
+#enlarge_photo > #enlarge_previous_container > #enlarge_previous {
+    width: 100%;
+}
+
+#enlarge_photo > #enlarge_info_container {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#enlarge_photo > #enlarge_info_container > #enlarge_info {
+    width: 100%;
+    height: 100%;
+}
+
+#enlarge_photo #enlarge_close path,
+#enlarge_photo #enlarge_next path,
+#enlarge_photo #enlarge_previous path,
+#enlarge_photo #enlarge_info circle {
+    fill: var(--col-stroke-strong);
+    stroke: var(--col-text-weak);
+}
+
+#enlarge_photo #enlarge_info path {
+    fill: var(--col-text-weak);
+}
+
+#enlarge_photo #enlarge_close:hover:not(:active) path,
+#enlarge_photo #enlarge_next:hover:not(:active) path,
+#enlarge_photo #enlarge_previous:hover:not(:active) path,
+#enlarge_photo #enlarge_info:hover:not(:active) circle {
+    fill: var(--col-fill);
+    stroke: var(--col-stroke-strong);
+}
+
+#enlarge_photo #enlarge_info:hover:not(:active) path {
+    fill: var(--col-stroke-strong);
+}
+
+#enlarge_photo > #enlarge_album {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-family: var(--font-strong);
+    font-size: var(--font-size-large);
+    color: var(--col-background);
+    background-color: var(--col-brand-alpha);
+}

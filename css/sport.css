@@ -1,0 +1,205 @@
+/* Content: */
+
+#content > #main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-block: 20px;
+    padding-inline: 40px;
+}
+
+#content > #main_content > .paragraph {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#content > #main_content > .paragraph:last-child {
+    margin-bottom: 10px;
+}
+
+#content > #main_content > .paragraph > .about-par {
+    flex: auto;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-normal);
+    color: var(--col-text-weak);
+    text-align: justify;
+}
+
+#content > #main_content > .paragraph > .about-par:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#content > #main_content > .paragraph > .about-par p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Activity: */
+
+#content > #main_content > .paragraph > .about-par > .activity-info {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#content > #main_content > .paragraph > .about-par > .activity-info > .activity-info-entry {
+    flex: none;
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-block: 5px;
+}
+
+#content > #main_content > .paragraph > .about-par > .activity-info > .activity-info-entry.larger {
+    width: 66%;
+}
+
+#content > #main_content > .paragraph > .about-par > .activity-info > .activity-info-entry > img {
+    width: 25px;
+}
+
+#content > #main_content > .paragraph > .about-par > .activity-info > .activity-info-entry > div {
+    margin-left: 10px;
+}
+
+#content > #main_content > .paragraph > .about-par > .triathlon-maps {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+#content > #main_content > .paragraph > .about-par > .triathlon-maps > .tri-map-container {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%
+}
+
+#content > #main_content > .paragraph > .about-par > .triathlon-maps > .tri-map-container > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#content > #main_content > .paragraph > .about-par > .triathlon-maps > .tri-map-container > .h3-holder {
+    flex: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#content > #main_content > .paragraph > .about-par > .triathlon-maps > .tri-map-container h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: var(--font-size-normal);
+}
+
+#content > #main_content > .paragraph > .about-par .map {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 5px;
+}
+
+#content > #main_content > .paragraph > .about-par .info-holder {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#content > #main_content > .paragraph > .about-par .info-holder > .info-row {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#content > #main_content > .paragraph > .about-par .info-holder > .info-row > img {
+    width: 25px;
+}
+
+#content > #main_content > .paragraph > .about-par .info-holder > .info-row > div {
+    margin-left: 10px;
+}
+
+#content > #main_content > .paragraph > .about-par .strava-link {
+    text-decoration: none;
+}
+
+#content > #main_content > .paragraph > .about-par .strava-link > img {
+    height: calc(1.3 * var(--font-size-normal));
+    vertical-align: middle;
+}
+
+#content > #main_content > .paragraph > .about-par .strava-link > span {
+    text-decoration: underline;
+}
+
+#content > #main_content > .paragraph > .about-par > .normal-map {
+    margin-top: 10px;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#content > #main_content > .paragraph > .about-par > .normal-map > .map {
+    width: 50%;
+    aspect-ratio: 2;
+}
+
+#content > #main_content > .paragraph > .about-par > .normal-map > .info-holder {
+    width: 23%;
+}
+
+#content > #main_content > .paragraph > .about-par > .normal-map > .results-holder > .strava-link {
+    margin-top: 5px;
+}
+
+#content > #main_content > .paragraph > .about-par > .normal-map > .results-holder {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+}
+
+#content > #main_content > .paragraph > .about-par > .normal-map > .results-holder > img {
+    width: 25px;
+}
+
+#content > #main_content > .paragraph > .about-par > .normal-map > .results-holder > :not(:last-child) {
+    /* flex: none; */
+    margin-bottom: 5px;
+}
+
+/* Map: */
+.leaflet-touch .leaflet-bar a.leaflet-control-zoom-in,
+.leaflet-touch .leaflet-bar a.leaflet-control-zoom-out {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.leaflet-touch .leaflet-bar .leaflet-control-zoom-in,
+.leaflet-touch .leaflet-bar .leaflet-control-zoom-out {
+    font-size: 11px;
+}

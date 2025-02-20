@@ -1,0 +1,265 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Top cover picture: */
+
+body > #cover_crop {
+    flex: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* aspect-ratio: 32/7; */
+    height: 22vw;
+    overflow: hidden;
+    z-index: -3;
+}
+
+#cover_crop > img {
+    width: 100%;
+}
+
+/* Bottom background: */
+
+body > #bottom_background {
+    flex: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: calc(100% - 11vw);
+    /* margin-bottom: 50px; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+body > #bottom_background > img {
+    flex: none;
+    width: 110vw;
+    position: relative;
+}
+
+/* Footer: */
+
+body > #footer {
+    flex: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0); */
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+body > #footer > #footer_copyright {
+    flex: none;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-normal);
+    font-style: italic;
+    color: var(--col-text-weak);
+    backdrop-filter: blur(10px);
+    /* background-color: aqua; */
+    padding-inline: 30px;
+    padding-block: 10px;
+    mask:
+        linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+    mask-composite: intersect;
+}
+
+/* Top menu bar: */
+
+body > #main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+body > #main > .main_spacer {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+
+body > #main > #main_middle {
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    max-width: 1000px;
+    min-width: 800px;
+}
+
+body > #main > #main_middle > #top_menu {
+    flex: auto;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+body > #main > #main_middle > #top_menu > #top_menu_page_buttons {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--col-background);
+    border-radius: 0 0 10px 10px;
+    box-shadow: var(--raise-low);
+    margin-right: 5vw;
+}
+
+body > #main > #main_middle > #top_menu > #top_menu_page_buttons > a {
+    text-decoration: none;
+}
+
+body > #main > #main_middle > #top_menu > #top_menu_page_buttons div {
+    display: flex;
+    font-family: var(--font-strong);
+    font-size: var(--font-size-large);
+    color: var(--col-text-strong);
+    transition: text-decoration-color 0.25s ease-out;
+}
+
+body > #main > #main_middle > #top_menu > #top_menu_page_buttons div.this-page {
+    font-weight: bold;
+}
+
+body > #main > #main_middle > #top_menu > #top_menu_page_buttons div:not(.this-page) {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0);
+}
+
+body > #main > #main_middle > #top_menu > #top_menu_page_buttons div:not(.this-page):hover:not(:active) {
+    text-decoration-color: var(--col-text-strong);
+}
+
+body > #main > #main_middle > #top_menu > #top_menu_cv {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+body > #main > #main_middle > #top_menu > #top_menu_cv > a {
+    text-decoration: none;
+}
+
+body > #main > #main_middle > #top_menu > #top_menu_cv #top_menu_cv_but {
+    background-color: var(--col-brand);
+    border: 0.5px solid var(--col-background);
+    border-radius: 10px;
+    font-family: var(--font-strong);
+    font-size: var(--font-size-large);
+    color: var(--col-background);
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: var(--raise-low);
+    transition: background-color 0.25s ease-out;
+}
+
+body > #main > #main_middle > #top_menu > #top_menu_cv #top_menu_cv_but:hover:not(:active) {
+    background-color: var(--col-brand-60);
+}
+
+ /* Content: */
+
+ body > #main > #main_middle > #content {
+    flex: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+ }
+
+body > #main > #main_middle > #content > div {
+    border-radius: 10px;
+    border: 0.5px solid var(--col-background);
+    box-shadow: var(--raise-low);
+    background-color: var(--col-background);
+}
+
+/* Section title: */
+
+#content > div > div > .about-title {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#content .about-title h1 {
+    flex: none;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    color: var(--col-text-strong);
+    margin: 0;
+}
+
+#content .about-title .about-title-line {
+    flex: auto;
+    border-bottom: 1px solid var(--col-stroke-weak);
+    margin-left: 20px;
+}
+
+/* Subsection title: */
+
+#content > div > div > .about-sub-title {
+    flex: auto;
+    margin-bottom: 10px;
+}
+
+#content .about-sub-title h2 {
+    flex: none;
+    margin: 0;
+    font-family: var(--font-weak);
+    font-size: var(--font-size-normal);
+    font-weight: bold;
+    color: var(--col-text-strong);
+    margin-left: 20px;
+}
+
+ /* Hyperlinks: */
+
+a {
+    color: inherit;
+}
+
+/* Section intro: */
+
+#content > #main_content > .paragraph > .about-par > .section-intro {
+    font-family: var(--font-weak);
+    font-size: var(--font-size-normal);
+    color: var(--col-text-strong);
+    margin-top: 20px;
+}

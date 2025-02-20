@@ -1,1 +1,284 @@
-Hello there
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>Adriaan Peetermans</title>
+        <link rel="icon" href="icon/adriaan_icon.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="css/color.css" />
+        <link rel="stylesheet" href="css/font.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="js/index.js" defer></script>
+    </head>
+    <body class="black-white courier raise" onload="loadScript()">
+        <div id="cover_crop">
+            <img src="main/autumn.jpeg" alt="Autumn cover picture" />
+        </div>
+        <div id="bottom_background">
+            <img src="svg/dff_background.svg" alt="DFF background" />
+        </div>
+        <div id="footer">
+            <div id="footer_copyright">
+                © 2025 Adriaan Peetermans. All rights reserved.
+            </div>
+            <div id="footer_back_to_top"></div>
+        </div>
+        <div id="main">
+            <div class="main_spacer"></div>
+            <div id="main_middle">
+                <div id="top_menu">
+                    <div id="top_menu_page_buttons">
+                        <a href="https://adriaanpeetermans.be">
+                            <div class="this-page">Adriaan</div>
+                        </a>
+                        <a href="https://adriaanpeetermans.be/publications">
+                            <div>Publications</div>
+                        </a>
+                        <a href="https://adriaanpeetermans.be/sport">
+                            <div>Sport</div>
+                        </a>
+                        <a href="https://adriaanpeetermans.be/photos">
+                            <div>Photos</div>
+                        </a>
+                    </div>
+                    <div id="top_menu_cv">
+                        <a href="pdf/cv_adriaanpeetermans_en.pdf" download>
+                            <div id="top_menu_cv_but">
+                                <div>Download CV</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="content">
+                    <!-- From here, page specific -->
+                    <div id="info_block">
+                        <img src="main/adriaan_bw.jpeg" alt="Adriaan profile picture" />
+                        <div id="name_title">
+                            <div id="name">
+                                <div id="first_name">Adriaan</div>
+                                <div id="last_name">Peetermans</div>
+                            </div>
+                            <div id="title">
+                                <div id="title_top">Doctor of Engineering Science (PhD)</div>
+                                <div id="title_bot">Electrical Engineering</div>
+                            </div>
+                        </div>
+                        <div id="key_info">
+                            <div id="birthday_info">
+                                <img src="svg/birthday.svg" alt="Birthday year" />
+                                <div>1995</div>
+                            </div>
+                            <div id="location_info">
+                                <img src="svg/location.svg" alt="Location" />
+                                <div>Tessenderlo-Ham, Belgium</div>
+                            </div>
+                            <div id="email_info">
+                                <img src="svg/mail.svg" alt="Contact" />
+                                <div id="show_email_box">Show email</div>
+                            </div>
+                            <div id="email_box">
+                                <a href="" id="email_link"></a>
+                            </div>
+                            <div id="language_info">
+                                <img src="svg/language.svg" alt="Language" />
+                                <div>Dutch (Flemish)</div>
+                            </div>
+                        </div>
+                        <div id="link_logos">
+                            <a href="https://scholar.google.be/citations?user=kw_PAYYAAAAJ&hl=en" title="Google Scholar">
+                                <img src="svg/scholar_bw.svg" alt="Google Scholar" class="b-w"/>
+                                <img src="svg/scholar.svg" alt="Google Scholar" class="col"/>
+                            </a>
+                            <a href="https://www.strava.com/athletes/5515483" title="Strava">
+                                <img src="svg/strava_bw.svg" alt="Strava" class="b-w"/>
+                                <img src="svg/strava.svg" alt="Strava" class="col"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/adriaan-peetermans-7ab036269" title="LinkedIn">
+                                <img src="svg/linkedin_bw.svg" alt="LinkedIn" class="b-w"/>
+                                <img src="svg/linkedin.svg" alt="LinkedIn" class="col"/>
+                            </a>
+                            <a href="https://github.com/AdriaanPeetermans" title="GitHub">
+                                <img src="svg/github_bw.svg" alt="GitHub" class="b-w"/>
+                                <img src="svg/github.svg" alt="GitHub" class="col"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="about_block">
+                        <div id="about_me">
+                            <div class="about-title">
+                                <h1>About Me</h1>
+                                <div class="about-title-line"></div>
+                            </div>
+                            <div class="about-par">
+                                <p>
+                                    I am an electrical engineer with a PhD from KU Leuven, obtained in 2024 under the supervision of Prof. dr. ir. Ingrid Verbauwhede. My research focused on the design and analysis of hardware implementations of cryptographic primitives, including True Random Number Generators (TRNGs) and Physical Unclonable Functions (PUFs). During my PhD, I successfully taped out three ASICs, further developing my expertise in digital design, which remains my primary area of interest.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="design_experience">
+                            <div class="about-title">
+                                <h1>Design Experience</h1>
+                                <div class="about-title-line"></div>
+                            </div>
+                            <div class="about-sub-title">
+                                <h2>Pipelined Architecture for TRNGs</h2>
+                            </div>
+                            <div class="about-par">
+                                <p>
+                                    This ASIC features a fully digital TRNG with increased Time-to-Digital Converter (TDC) resolution enabled by a Vernier Delay Line (VDL) technique. It incorporates concurrent jitter accumulation, forming a jitter pipeline to enhance randomness generation efficiency. A stochastic model is available, ensuring compatibility with modern TRNG standards such as <a href="https://csrc.nist.gov/pubs/sp/800/90/b/final">NIST SP 800-90B</a> and <a href="https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kryptografie/Zufallszahlengenerator/zufallszahlengenerator_node.html">AIS 20/31</a>.
+                                </p>
+                            </div>
+                            <div class="asic">
+                                <div class="asic_info">
+                                    <div class="asic_info_row" title="Tape-out year">
+                                        <img src="svg/date.svg" alt="Tape-out year icon" />
+                                        <div>2020</div>
+                                    </div>
+                                    <div class="asic_info_row" title="Number of transistors">
+                                        <img src="svg/transistor.svg" alt="Number of transistors icon" />
+                                        <div>7 357 transistors</div>
+                                    </div>
+                                    <div class="asic_info_row" title="ASIC technology">
+                                        <img src="svg/technology.svg" alt="ASIC technology icon" />
+                                        <div><a href="https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_40nm">40 nm TSMC</a></div>
+                                    </div>
+                                    <div class="asic_info_row" title="Chip area">
+                                        <img src="svg/area.svg" alt="Chip area icon" />
+                                        <div>114.5 µm x 40.5 µm</div>
+                                    </div>
+                                </div>
+                                <img src="asics/asic_2020_0.jpeg" alt="ASIC 2020 photo" />
+                            </div>
+                            <div class="about-sub-title">
+                                <h2>Energy- and Area-Efficient Entropy Source</h2>
+                            </div>
+                            <div class="about-par">
+                                <p>
+                                    This ASIC features an energy- and area-efficient entropy source for TRNGs, accompanied by a comprehensive stochastic model. It employs a jitter pipelining architecture with enhanced timing resolution to maximize throughput and energy efficiency. The fully digital design ensures seamless portability to other technology nodes, leveraging the benefits of technology scaling. Additionally, the design complies with modern TRNG standards, including <a href="https://csrc.nist.gov/pubs/sp/800/90/b/final">NIST SP 800-90B</a> and <a href="https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kryptografie/Zufallszahlengenerator/zufallszahlengenerator_node.html">AIS 20/31</a>.
+                                </p>
+                            </div>
+                            <div class="asic">
+                                <div class="asic_info">
+                                    <div class="asic_info_row" title="Tape-out year">
+                                        <img src="svg/date.svg" alt="Tape-out year icon" />
+                                        <div>2021</div>
+                                    </div>
+                                    <div class="asic_info_row" title="Number of transistors">
+                                        <img src="svg/transistor.svg" alt="Number of transistors icon" />
+                                        <div>7 664 transistors</div>
+                                    </div>
+                                    <div class="asic_info_row" title="ASIC technology">
+                                        <img src="svg/technology.svg" alt="ASIC technology icon" />
+                                        <div><a href="https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_28nm">28 nm TSMC</a></div>
+                                    </div>
+                                    <div class="asic_info_row" title="Chip area">
+                                        <img src="svg/area.svg" alt="Chip area icon" />
+                                        <div>38.3 µm x 19.6 µm</div>
+                                    </div>
+                                    <div class="asic_info_row" title="Published at">
+                                        <img src="svg/publication.svg" alt="Published at icon" />
+                                        <div>
+                                            <a href="https://tches.iacr.org/index.php/TCHES/article/view/9814">IACR CHES 2022</a>
+                                        </div>
+                                    </div>
+                                    <div class="asic_info_row" title="GitHub archive">
+                                        <img src="svg/github_stroke.svg" alt="GitHub archive" />
+                                        <div>
+                                            <a href="https://github.com/KULeuven-COSIC/jitter_pipeline_trng">
+                                                GitHub archive 
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="asics/asic_2021_0.jpeg" alt="ASIC 2021 photo" />
+                            </div>
+                            <div class="about-sub-title">
+                                <h2>Characterization of RO Jitter & Multi-Edge Entropy Source</h2>
+                            </div>
+                            <div class="long_aspect">
+                                <div>
+                                    <div class="about-par">
+                                        <p>
+                                            This ASIC features two subcircuits: a jitter characterization module and a multi-edge Ring Oscillator (RO) entropy source. The jitter characterization hardware, utilizing delay chain time-to-digital conversion, enables the analysis of dominant noise types in free-running ROs. A time-domain study analytically links the oscillator excess phase variance to the accumulation time length. The multi-edge RO entropy source concurrently extracts entropy from multiple racing edges, improving throughput and energy efficiency.
+                                        </p>
+                                    </div>
+                                    <div class="asic">
+                                        <div class="asic_info">
+                                            <div class="asic_info_row" title="Tape-out year">
+                                                <img src="svg/date.svg" alt="Tape-out year icon" />
+                                                <div>2021</div>
+                                            </div>
+                                            <div class="asic_info_row" title="Number of transistors">
+                                                <img src="svg/transistor.svg" alt="Number of transistors icon" />
+                                                <div>69 262 transistors</div>
+                                            </div>
+                                            <div class="asic_info_row" title="ASIC technology">
+                                                <img src="svg/technology.svg" alt="ASIC technology icon" />
+                                                <div><a href="https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_65nm">65 nm TSMC</a></div>
+                                            </div>
+                                            <div class="asic_info_row" title="Chip area">
+                                                <img src="svg/area.svg" alt="Chip area icon" />
+                                                <div>149.5 µm x 384.7 µm</div>
+                                            </div>
+                                            <div class="asic_info_row" title="Published at">
+                                                <img src="svg/publication.svg" alt="Published at icon" />
+                                                <div><a href="https://ieeexplore.ieee.org/abstract/document/10382418">IEEE TCASI 2024</a></div>
+                                            </div>
+                                            <div class="asic_info_row" title="GitHub archive">
+                                                <img src="svg/github_stroke.svg" alt="GitHub archive" />
+                                                <div>
+                                                    <a href="https://github.com/KULeuven-COSIC/asic_jitter_measure">
+                                                        GitHub archive 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="asics/asic_2021_1.jpeg" alt="ASIC 2021 photo" />
+                            </div>
+                        </div>
+                        <div id="patents">
+                            <div class="about-title">
+                                <h1>Patents</h1>
+                                <div class="about-title-line"></div>
+                            </div>
+                            <div class="about-sub-title">
+                                <h2>Random Number Generator</h2>
+                            </div>
+                            <div class="about-par">
+                                <p>
+                                    This patent introduces a configurable RO architecture that leverages logic gate propagation delay variability to enable a tunable range of oscillation frequencies. The fully digital design is compatible with both FPGAs and ASICs, ensuring versatile deployment. The architecture is suitable for various oscillator-based entropy sources, with a detailed implementation example provided for the Coherent Sampling RO (COSO) entropy source.
+                                </p>
+                            </div>
+                            <div class="about_patent">
+                                <div class="patent_country_list">
+                                    <div class="patent_country" title="United States">
+                                        <img src="svg/us_flag.svg" alt="US flag" />
+                                        <div>
+                                            <a href="https://patents.google.com/patent/US10761809B1/en">US10761809B1</a>
+                                        </div>
+                                    </div>
+                                    <div class="patent_country" title="South Korea">
+                                        <img src="svg/kr_flag.svg" alt="KR flag" />
+                                        <div>
+                                            <a href="https://patents.google.com/patent/KR102170985B1/en">KR102170985B1</a>
+                                        </div>
+                                    </div>
+                                    <div class="patent_country" title="Japan">
+                                        <img src="svg/jp_flag.svg" alt="JP flag" />
+                                        <div>
+                                            <a href="https://patents.google.com/patent/JP6960697B2/en">JP6960697B2</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="svg/conf_ro.svg" alt="Configurable RO architecture" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_spacer"></div>
+        </div>
+    </body>
+</html>

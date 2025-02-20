@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   version="1.1"
+   viewBox="0 0 60 60"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       id="filter17"
+       x="-0.041161274"
+       y="-0.041177917"
+       width="1.1337741"
+       height="1.1338282">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.34999999999999998"
+         flood-color="rgb(0,0,0)"
+         id="feFlood16" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="1.000000"
+         id="feGaussianBlur16"
+         dy="3" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="3"
+         dy="3"
+         id="feOffset16" />
+      <feComposite
+         result="comp1"
+         operator="out"
+         in="flood"
+         in2="offset"
+         id="feComposite16" />
+      <feComposite
+         result="comp2"
+         operator="atop"
+         in="comp1"
+         in2="SourceGraphic"
+         id="feComposite17" />
+    </filter>
+  </defs>
+  <g
+     id="g12"
+     transform="matrix(0.78888889,0,0,0.78928571,6.3333333,6.3214287)"
+     style="stroke-width:3.80186083;stroke-dasharray:none">
+    <path
+       id="path4"
+       style="color:#000000;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1;stroke-opacity:1;stroke-width:0.9998894;stroke-dasharray:none;filter:url(#filter17)"
+       d="M 7.180623,0.85816679 A 6.3364348,6.3364348 0 0 0 2.7019149,2.716552 a 6.3364348,6.3364348 0 0 0 0,8.960337 L 21.035156,30.000913 2.7019149,48.324937 a 6.3364348,6.3364348 0 0 0 0,8.960337 6.3364348,6.3364348 0 0 0 8.9598921,0.0025 L 30,38.958775 48.338193,57.287749 a 6.3364348,6.3364348 0 0 0 8.959892,-0.0025 6.3364348,6.3364348 0 0 0 -0.0025,-8.960337 L 38.962368,30.000913 57.298085,11.676889 a 6.3364348,6.3364348 0 0 0 0,-8.960337 A 6.3364348,6.3364348 0 0 0 52.819377,0.85816679 6.3364348,6.3364348 0 0 0 48.338193,2.7140774 L 30,21.043051 11.661807,2.7140774 A 6.3364348,6.3364348 0 0 0 7.180623,0.85816679 Z" />
+  </g>
+</svg>

@@ -1,0 +1,449 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>Adriaan Peetermans - Sport</title>
+        <link rel="icon" href="icon/adriaan_icon.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="css/color.css" />
+        <link rel="stylesheet" href="css/font.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/sport.css" />
+        <script src="js/sport.js" defer></script>
+        <!-- Leaflet: -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/2.1.2/gpx.min.js" defer></script>
+    </head>
+    <body class="black-white courier raise" onload="loadScript()">
+        <div id="cover_crop">
+            <img src="main/autumn.jpeg" alt="Autumn cover picture" />
+        </div>
+        <div id="bottom_background">
+            <img src="svg/dff_background.svg" alt="DFF background" />
+        </div>
+        <div id="footer">
+            <div id="footer_copyright">
+                © 2025 Adriaan Peetermans. All rights reserved.
+            </div>
+            <div id="footer_back_to_top"></div>
+        </div>
+        <div id="main">
+            <div class="main_spacer"></div>
+            <div id="main_middle">
+                <div id="top_menu">
+                    <div id="top_menu_page_buttons">
+                        <a href="https://adriaanpeetermans.be">
+                            <div>Adriaan</div>
+                        </a>
+                        <a href="https://adriaanpeetermans.be/publications">
+                            <div>Publications</div>
+                        </a>
+                        <a href="https://adriaanpeetermans.be/sport">
+                            <div class="this-page">Sport</div>
+                        </a>
+                        <a href="https://adriaanpeetermans.be/photos">
+                            <div>Photos</div>
+                        </a>
+                    </div>
+                    <div id="top_menu_cv">
+                        <a href="pdf/cv_adriaanpeetermans_en.pdf" download>
+                            <div id="top_menu_cv_but">
+                                <div>Download CV</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="content">
+                    <!-- From here, page specific -->
+                    <div id="main_content">
+                        <div class="paragraph">
+                            <div class="about-par">
+                                <p class="section-intro">
+                                    I have a passion for running and cycling, and over the years, I have taken on various endurance challenges, including completing an Ironman and running a marathon. This section showcases some of my most memorable sports achievements.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="paragraph">
+                            <div class="about-title">
+                                <h1>Triathlon</h1>
+                                <div class="about-title-line"></div>
+                            </div>
+                            <div class="about-sub-title">
+                                <h2>Ironman Vichy</h2>
+                            </div>
+                            <div class="about-par">
+                                <div class="activity-info">
+                                    <div class="activity-info-entry" title="Date">
+                                        <img src="svg/date.svg" alt="Date icon" />
+                                        <div>
+                                            August 20, 2023
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Location">
+                                        <img src="svg/location.svg" alt="Location icon"/>
+                                        <div>
+                                            Vichy, France
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Temperature">
+                                        <img src="svg/temperature.svg" alt="Temperature icon"/>
+                                        <div>
+                                            19 °C - 34 °C
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Timing">
+                                        <img src="svg/timing.svg" alt="Timing icon"/>
+                                        <div>
+                                            11 hr, 56 min, 30 sec
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry larger" title="Results">
+                                        <img src="svg/trophy.svg" alt="Trophy icon"/>
+                                        <div>
+                                            85<sup>th</sup>/467 overall, 82<sup>nd</sup>/414 Men, 16<sup>th</sup>/58 M25-29
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="triathlon-maps">
+                                    <div class="tri-map-container">
+                                        <div class="h3-holder">
+                                            <h3>Swim - 3.8 km</h3>
+                                        </div>
+                                        <div class="map" id="im_vichy_swim_2023"></div>
+                                        <div class="info-holder">
+                                            <div class="info-row" title="Timing">
+                                                <img src="svg/timing.svg" alt="Timing icon" />
+                                                <div>
+                                                    1 hr, 40 min, 31 sec
+                                                </div>
+                                            </div>
+                                            <div class="info-row" title="Average pace">
+                                                <img src="svg/speed.svg" alt="Timing icon" />
+                                                <div>
+                                                    2:39 min/100 m
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="strava-link" href="https://www.strava.com/activities/9688253075">
+                                            <img src="svg/strava_stroke.svg" alt="Strava icon" />
+                                            <span>Strava activity</span>
+                                        </a>
+                                    </div>
+                                    <div class="tri-map-container">
+                                        <div class="h3-holder">
+                                            <h3>Bike - 183 km</h3>
+                                        </div>
+                                        <div class="map" id="im_vichy_bike_2023"></div>
+                                        <div class="info-holder">
+                                            <div class="info-row" title="Timing">
+                                                <img src="svg/timing.svg" alt="Timing icon" />
+                                                <div>
+                                                    6 hr, 5 min, 11 sec
+                                                </div>
+                                            </div>
+                                            <div class="info-row" title="Average speed">
+                                                <img src="svg/speed.svg" alt="Timing icon" />
+                                                <div>
+                                                    30.1 km/hr
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="strava-link" href="https://www.strava.com/activities/9688028813">
+                                            <img src="svg/strava_stroke.svg" alt="Strava icon" />
+                                            <span>Strava activity</span>
+                                        </a>
+                                    </div>
+                                    <div class="tri-map-container">
+                                        <div class="h3-holder">
+                                            <h3>Run - 42.2 km</h3>
+                                        </div>
+                                        <div class="map" id="im_vichy_run_2023"></div>
+                                        <div class="info-holder">
+                                            <div class="info-row" title="Timing">
+                                                <img src="svg/timing.svg" alt="Timing icon" />
+                                                <div>
+                                                    3 hr, 56 min, 50 sec
+                                                </div>
+                                            </div>
+                                            <div class="info-row" title="Average pace">
+                                                <img src="svg/speed.svg" alt="Timing icon" />
+                                                <div>
+                                                    5:37 min/km
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="strava-link" href="https://www.strava.com/activities/9687248729">
+                                            <img src="svg/strava_stroke.svg" alt="Strava icon" />
+                                            <span>Strava activity</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paragraph">
+                            <div class="about-title">
+                                <h1>Running</h1>
+                                <div class="about-title-line"></div>
+                            </div>
+                            <div class="about-sub-title">
+                                <h2>TCS Amsterdam Marathon</h2>
+                            </div>
+                            <div class="about-par">
+                                <div class="activity-info">
+                                    <div class="activity-info-entry" title="Date">
+                                        <img src="svg/date.svg" alt="Date icon" />
+                                        <div>
+                                            October 20, 2024
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Location">
+                                        <img src="svg/location.svg" alt="Location icon"/>
+                                        <div>
+                                            Amsterdam, The Netherlands
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Temperature">
+                                        <img src="svg/temperature.svg" alt="Temperature icon"/>
+                                        <div>
+                                            14 °C - 17 °C
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Timing">
+                                        <img src="svg/distance.svg" alt="Distance icon" />
+                                        <div>
+                                            42.195 km
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="normal-map">
+                                    <div class="map" id="mar_ams_2024"></div>
+                                    <div class="info-holder">
+                                        <div class="info-row" title="Timing">
+                                            <img src="svg/timing.svg" alt="Timing icon"/>
+                                            <div>
+                                                2 hr, 52 min, 27 sec
+                                            </div>
+                                        </div>
+                                        <div class="info-row" title="Average pace">
+                                            <img src="svg/speed.svg" alt="Timing icon" />
+                                            <div>
+                                                4:05 min/km
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="results-holder">
+                                        <img src="svg/trophy.svg" alt="Trophy icon" />
+                                        <div>
+                                            525<sup>th</sup>/16&nbsp;815 overall
+                                        </div>
+                                        <div>
+                                            499<sup>th</sup>/12&nbsp;320 Men
+                                        </div>
+                                        <div>
+                                            272<sup>nd</sup>/5&nbsp;713 Msen
+                                        </div>
+                                        <a class="strava-link" href="https://www.strava.com/activities/12699226886">
+                                            <img src="svg/strava_stroke.svg" alt="Strava icon" />
+                                            <span>Strava activity</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-sub-title">
+                                <h2>The Primagaz Classic Tessenderlo</h2>
+                            </div>
+                            <div class="about-par">
+                                <div class="activity-info">
+                                    <div class="activity-info-entry" title="Date">
+                                        <img src="svg/date.svg" alt="Date icon" />
+                                        <div>
+                                            July 8, 2024
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Location">
+                                        <img src="svg/location.svg" alt="Location icon"/>
+                                        <div>
+                                            Tessenderlo, Belgium
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Temperature">
+                                        <img src="svg/temperature.svg" alt="Temperature icon"/>
+                                        <div>
+                                            18 °C - 20 °C
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Timing">
+                                        <img src="svg/distance.svg" alt="Distance icon" />
+                                        <div>
+                                            10 km
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="normal-map">
+                                    <div class="map" id="10k_tes_2024"></div>
+                                    <div class="info-holder">
+                                        <div class="info-row" title="Timing">
+                                            <img src="svg/timing.svg" alt="Timing icon"/>
+                                            <div>
+                                                33 min, 32 sec
+                                            </div>
+                                        </div>
+                                        <div class="info-row" title="Average pace">
+                                            <img src="svg/speed.svg" alt="Timing icon" />
+                                            <div>
+                                                3:21 min/km
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="results-holder">
+                                        <img src="svg/trophy.svg" alt="Trophy icon" />
+                                        <div>
+                                            27<sup>th</sup>/1 603 overall
+                                        </div>
+                                        <div>
+                                            6<sup>th</sup> M25
+                                        </div>
+                                        <a class="strava-link" href="https://www.strava.com/activities/11840594940">
+                                            <img src="svg/strava_stroke.svg" alt="Strava icon" />
+                                            <span>Strava activity</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paragraph">
+                            <div class="about-title">
+                                <h1>Cycling</h1>
+                                <div class="about-title-line"></div>
+                            </div>
+                            <div class="about-sub-title">
+                                <h2>Vélomédiane Claudy Criquiélion 2023</h2>
+                            </div>
+                            <div class="about-par">
+                                <div class="activity-info">
+                                    <div class="activity-info-entry" title="Date">
+                                        <img src="svg/date.svg" alt="Date icon" />
+                                        <div>
+                                            August 26, 2023
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Location">
+                                        <img src="svg/location.svg" alt="Location icon"/>
+                                        <div>
+                                            La Roche-en-Ardenne, Belgium
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Temperature">
+                                        <img src="svg/temperature.svg" alt="Temperature icon"/>
+                                        <div>
+                                            8 °C - 17 °C
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Timing">
+                                        <img src="svg/distance.svg" alt="Distance icon" />
+                                        <div>
+                                            183.46 km
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Elevation">
+                                        <img src="svg/elevation.svg" alt="Distance icon" />
+                                        <div>
+                                            3 311 m
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="normal-map">
+                                    <div class="map" id="vcc_lea_2023"></div>
+                                    <div class="info-holder">
+                                        <div class="info-row" title="Timing">
+                                            <img src="svg/timing.svg" alt="Timing icon"/>
+                                            <div>
+                                                5 hr, 33 min, 7 sec
+                                            </div>
+                                        </div>
+                                        <div class="info-row" title="Average speed">
+                                            <img src="svg/speed.svg" alt="Timing icon" />
+                                            <div>
+                                                33.0 km/hr
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="results-holder">
+                                        <img src="svg/trophy.svg" alt="Trophy icon" />
+                                        <div>
+                                            13<sup>th</sup>/708 overall
+                                        </div>
+                                        <a class="strava-link" href="https://www.strava.com/activities/9725022273">
+                                            <img src="svg/strava_stroke.svg" alt="Strava icon" />
+                                            <span>Strava activity</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-sub-title">
+                                <h2>Everesting at Col de Haussire</h2>
+                            </div>
+                            <div class="about-par">
+                                <div class="activity-info">
+                                    <div class="activity-info-entry" title="Date">
+                                        <img src="svg/date.svg" alt="Date icon" />
+                                        <div>
+                                            July 17, 2021
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Location">
+                                        <img src="svg/location.svg" alt="Location icon"/>
+                                        <div>
+                                            La Roche-en-Ardenne, Belgium
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Temperature">
+                                        <img src="svg/temperature.svg" alt="Temperature icon"/>
+                                        <div>
+                                            13 °C - 21 °C
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Timing">
+                                        <img src="svg/distance.svg" alt="Distance icon" />
+                                        <div>
+                                            180.43 km
+                                        </div>
+                                    </div>
+                                    <div class="activity-info-entry" title="Elevation">
+                                        <img src="svg/elevation.svg" alt="Elevation icon" />
+                                        <div>
+                                            8 961 m
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="normal-map">
+                                    <div class="map" id="eve_lea_2021"></div>
+                                    <div class="info-holder">
+                                        <div class="info-row" title="Timing">
+                                            <img src="svg/timing.svg" alt="Timing icon"/>
+                                            <div>
+                                                10 hr, 3 min, 44 sec
+                                            </div>
+                                        </div>
+                                        <div class="info-row" title="Average speed">
+                                            <img src="svg/speed.svg" alt="Timing icon" />
+                                            <div>
+                                                17.9 km/hr
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="results-holder">
+                                        <a class="strava-link" href="https://www.strava.com/activities/5642854311">
+                                            <img src="svg/strava_stroke.svg" alt="Strava icon" />
+                                            <span>Strava activity</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_spacer"></div>
+        </div>
+    </body>
+</html>

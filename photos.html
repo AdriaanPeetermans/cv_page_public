@@ -1,0 +1,109 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>Adriaan Peetermans - Photos</title>
+        <link rel="icon" href="icon/adriaan_icon.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="css/color.css" />
+        <link rel="stylesheet" href="css/font.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/photos.css" />
+        <!-- <script src="https://cdn.jsdelivr.net/npm/exif-js"></script> -->
+        <script src="js/svg-inject.min.js"></script>
+        <script src="js/photos.js" defer></script>
+    </head>
+    <body class="black-white courier raise" onload="loadScript()">
+        <div id="cover_crop">
+            <img src="main/autumn.jpeg" alt="Autumn cover picture" />
+        </div>
+        <div id="bottom_background">
+            <img src="svg/dff_background.svg" alt="DFF background" />
+        </div>
+        <div id="footer">
+            <div id="footer_copyright">
+                © 2025 Adriaan Peetermans. All rights reserved.
+            </div>
+            <div id="footer_back_to_top"></div>
+        </div>
+        <div id="enlarge_photo">
+            <div id="enlarge_photo_container">
+                <img src="photos/zeiss-ikon_telma_0.jpeg" />
+                <div id="enlarge_photo_meta">
+                    <div class="enlarge-photo-meta-col" title="Date">
+                        <img src="svg/generic/date.svg" onload="SVGInject(this)" />
+                        <div></div>
+                    </div>
+                    <div class="enlarge-photo-meta-col" title="Location">
+                        <img src="svg/generic/location.svg" onload="SVGInject(this)" />
+                        <div></div>
+                    </div>
+                    <div class="enlarge-photo-meta-col" title="Camera">
+                        <img src="svg/generic/camera.svg" onload="SVGInject(this)" />
+                        <div></div>
+                    </div>
+                    <div class="enlarge-photo-meta-col" title="Aperture, shutter speed, 35 mm equivalent focal length">
+                        <img src="svg/generic/aperture.svg" onload="SVGInject(this)" />
+                        <div></div>
+                    </div>
+                    <div class="enlarge-photo-meta-col" title="Film stock">
+                        <img src="svg/generic/film.svg" onload="SVGInject(this)" />
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="enlarge_close_container">
+                <img src="svg/generic/close.svg" id="enlarge_close" alt="Close icon" onload="SVGInject(this)" />
+            </div>
+            <div id="enlarge_next_container">
+                <img src="svg/generic/next.svg" id="enlarge_next" alt="Next icon" onload="SVGInject(this)" />
+            </div>
+            <div id="enlarge_previous_container">
+                <img src="svg/generic/previous.svg" id="enlarge_previous" alt="Previous icon" onload="SVGInject(this)" />
+            </div>
+            <div id="enlarge_info_container">
+                <img src="svg/generic/info.svg" id="enlarge_info" alt="Info icon" onload="SVGInject(this)" />
+            </div>
+            <div id="enlarge_album"></div>
+        </div>
+        <div id="main">
+            <div class="main_spacer"></div>
+            <div id="main_middle">
+                <div id="top_menu">
+                    <div id="top_menu_page_buttons">
+                        <a href="https://adriaanpeetermans.be">
+                            <div>Adriaan</div>
+                        </a>
+                        <a href="https://adriaanpeetermans.be/publications">
+                            <div>Publications</div>
+                        </a>
+                        <a href="https://adriaanpeetermans.be/sport">
+                            <div>Sport</div>
+                        </a>
+                        <a href="https://adriaanpeetermans.be/photos">
+                            <div class="this-page">Photos</div>
+                        </a>
+                    </div>
+                    <div id="top_menu_cv">
+                        <a href="pdf/cv_adriaanpeetermans_en.pdf" download>
+                            <div id="top_menu_cv_but">
+                                <div>Download CV</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="content">
+                    <!-- From here, page specific -->
+                    <div id="main_content">
+                        <div class="paragraph">
+                            <div class="about-par">
+                                <p class="section-intro">
+                                    I have an interest in capturing the world through different lenses. I enjoy the process of analog photography as well as the unique perspectives offered by drone photography. This section showcases some of my favorite shots.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_spacer"></div>
+        </div>
+    </body>
+</html>

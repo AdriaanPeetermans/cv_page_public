@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="45"
+   height="45"
+   viewBox="0 0 11.90625 11.90625"
+   version="1.1"
+   id="svg2260"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="github_bw.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2262"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="6.5935122"
+     inkscape:cx="23.432125"
+     inkscape:cy="34.958607"
+     inkscape:window-width="1312"
+     inkscape:window-height="847"
+     inkscape:window-x="62"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2257">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3883">
+      <circle
+         r="48.310192"
+         cy="460.14056"
+         cx="-33.987679"
+         id="circle3885"
+         style="opacity:1;fill:#76a7fa;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3883-5">
+      <circle
+         r="48.310192"
+         cy="460.14056"
+         cx="-33.987679"
+         id="circle3885-4"
+         style="opacity:1;fill:#76a7fa;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+    </clipPath>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect2136"
+       is_visible="true"
+       lpeversion="0" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:nodetypes="ccscccccccscccccccscsscc"
+       inkscape:connector-curvature="0"
+       d="m 4.1883092,10.896671 -3e-5,-10e-6 c 0.32837,0.0663 0.44866,-0.14327 0.44866,-0.31957 0,-0.15438 -0.0109,-0.6835495 -0.0109,-1.2349095 -1.83876,0.39698 -2.22168,-0.79382 -2.22168,-0.79382 -0.29549,-0.77178 -0.73334,-0.97013 -0.73334,-0.97013 -0.60183,-0.40794 0.0438,-0.40794 0.0438,-0.40794 0.66758,0.0442 1.01789,0.68355 1.01789,0.68355 0.59086,1.01423 1.54299,0.72766 1.92604,0.55123 0.0546,-0.43 0.22988,-0.72766 0.41592,-0.893 -1.46655,-0.15438 -3.00955,-0.72767 -3.00955,-3.28557 0,-0.72766 0.26248,-1.323 0.67841,-1.786 -0.0656,-0.16535 -0.2955,-0.84903 0.0658,-1.76409002 0,0 0.55812,-0.17643 1.81657,0.68356002 0.53879,-0.14577 1.09444,-0.21992 1.65261,-0.22055 0.55811,0 1.12706,0.0773 1.65245,0.22055 1.25859,-0.85999002 1.81671,-0.68356002 1.81671,-0.68356002 0.3612598,0.91506002 0.13125,1.59874002 0.0656,1.76409002 0.4268798,0.463 0.6785398,1.05834 0.6785398,1.786 0,2.5579 -1.5429998,3.12009 -3.0205098,3.28557 0.24084,0.20944 0.44866,0.60629 0.44866,1.23477 0,0.893 -0.0109,1.6096995 -0.0109,1.8301195 0,0.17643 0.12043,0.38601 0.44231,0.32194 -1.47611,0.50756 -2.84623,0.41291 -4.1632,-0.002 z"
+       style="fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path2275" />
+  </g>
+</svg>
