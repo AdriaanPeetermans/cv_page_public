@@ -1,0 +1,472 @@
+{
+    "rolls": [
+        {
+            "title": "Analog - Black & White",
+            "photos": [
+                {
+                    "url": "photos/zeiss-ikon_telma_0.jpeg",
+                    "date": {
+                        "month": 9,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Oostduinkerke",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "Telma",
+                        "make": "Zeiss Ikon"
+                    },
+                    "settings": {
+                        "fnumber": 11,
+                        "speed": 125,
+                        "focal35mm": 47
+                    },
+                    "film": {
+                        "make": "Kodak",
+                        "model": "T-MAX",
+                        "iso": 400,
+                        "format": 120
+                    }
+                },
+                {
+                    "url": "photos/zeiss-ikon_telma_1.jpeg",
+                    "date": {
+                        "month": 9,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Oostduinkerke",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "Telma",
+                        "make": "Zeiss Ikon"
+                    },
+                    "settings": {
+                        "fnumber": 11,
+                        "speed": 125,
+                        "focal35mm": 47
+                    },
+                    "film": {
+                        "make": "Kodak",
+                        "model": "T-MAX",
+                        "iso": 400,
+                        "format": 120
+                    }
+                },
+                {
+                    "url": "photos/yashica_mat_124_0.jpeg",
+                    "date": {
+                        "month": 4,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "La Roche-en-Ardenne",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "MAT - 124",
+                        "make": "Yashica"
+                    },
+                    "settings": {
+                        "fnumber": 11,
+                        "speed": 500,
+                        "focal35mm": 44
+                    },
+                    "film": {
+                        "make": "Kodak",
+                        "model": "T-MAX",
+                        "iso": 400,
+                        "format": 120
+                    }
+                },
+                {
+                    "url": "photos/yashica_mat_124_1.jpeg",
+                    "date": {
+                        "month": 4,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "La Roche-en-Ardenne",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "MAT - 124",
+                        "make": "Yashica"
+                    },
+                    "settings": {
+                        "fnumber": 3.5,
+                        "speed": 60,
+                        "focal35mm": 44
+                    },
+                    "film": {
+                        "make": "Kodak",
+                        "model": "T-MAX",
+                        "iso": 400,
+                        "format": 120
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Analog - Color",
+            "photos": [
+                {
+                    "url": "photos/contax_159mm_0.jpeg",
+                    "date": {
+                        "month": 9,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Wissant",
+                        "country": "France"
+                    },
+                    "camera": {
+                        "model": "159 MM",
+                        "make": "Contax"
+                    },
+                    "film": {
+                        "make": "Kodak",
+                        "model": "Gold",
+                        "iso": 200,
+                        "format": 135
+                    }
+                },
+                {
+                    "url": "photos/contax_159mm_1.jpeg",
+                    "date": {
+                        "month": 9,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Wissant",
+                        "country": "France"
+                    },
+                    "camera": {
+                        "model": "159 MM",
+                        "make": "Contax"
+                    },
+                    "film": {
+                        "make": "Kodak",
+                        "model": "Gold",
+                        "iso": 200,
+                        "format": 135
+                    }
+                },
+                {
+                    "url": "photos/contax_159mm_2.jpeg",
+                    "date": {
+                        "month": 9,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Wissant",
+                        "country": "France"
+                    },
+                    "camera": {
+                        "model": "159 MM",
+                        "make": "Contax"
+                    },
+                    "film": {
+                        "make": "Kodak",
+                        "model": "Gold",
+                        "iso": 200,
+                        "format": 135
+                    }
+                },
+                {
+                    "url": "photos/contax_159mm_3.jpeg",
+                    "date": {
+                        "month": 10,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Tessenderlo",
+                        "country": "France"
+                    },
+                    "camera": {
+                        "model": "159 MM",
+                        "make": "Contax"
+                    },
+                    "film": {
+                        "make": "Kodak",
+                        "model": "Gold",
+                        "iso": 200,
+                        "format": 135
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Drone",
+            "photos": [
+                {
+                    "url": "photos/dji_air3_0.jpeg",
+                    "date": {
+                        "month": 10,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Herbeumont",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "Air 3",
+                        "make": "DJI"
+                    },
+                    "settings": {
+                        "fnumber": 1.7,
+                        "speed": 240,
+                        "focal35mm": 24
+                    }
+                },
+                {
+                    "url": "photos/dji_air3_1.jpeg",
+                    "date": {
+                        "month": 1,
+                        "year": 2025
+                    },
+                    "location": {
+                        "town": "La Palma",
+                        "country": "Spain"
+                    },
+                    "camera": {
+                        "model": "Air 3",
+                        "make": "DJI"
+                    },
+                    "settings": {
+                        "fnumber": 1.7,
+                        "speed": 3000,
+                        "focal35mm": 24
+                    }
+                },
+                {
+                    "url": "photos/dji_air3_2.jpeg",
+                    "date": {
+                        "month": 1,
+                        "year": 2025
+                    },
+                    "location": {
+                        "town": "La Palma",
+                        "country": "Spain"
+                    },
+                    "camera": {
+                        "model": "Air 3",
+                        "make": "DJI"
+                    },
+                    "settings": {
+                        "fnumber": 1.7,
+                        "speed": 8000,
+                        "focal35mm": 24
+                    }
+                },
+                {
+                    "url": "photos/dji_air3_3.jpeg",
+                    "date": {
+                        "month": 8,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Oosterscheldekering",
+                        "country": "The Netherlands"
+                    },
+                    "camera": {
+                        "model": "Air 3",
+                        "make": "DJI"
+                    },
+                    "settings": {
+                        "fnumber": 1.7,
+                        "speed": 640,
+                        "focal35mm": 24
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Other",
+            "photos": [
+                {
+                    "url": "photos/iphone_13_0.jpeg",
+                    "date": {
+                        "month": 10,
+                        "year": 2022
+                    },
+                    "location": {
+                        "town": "Meise",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "iPhone 13",
+                        "make": "Apple"
+                    },
+                    "settings": {
+                        "fnumber": 1.6,
+                        "speed": 50,
+                        "focal35mm": 26
+                    }
+                },
+                {
+                    "url": "photos/iphone_13_1.jpeg",
+                    "date": {
+                        "month": 12,
+                        "year": 2022
+                    },
+                    "location": {
+                        "town": "Grez-Doiceau",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "iPhone 13",
+                        "make": "Apple"
+                    },
+                    "settings": {
+                        "fnumber": 1.6,
+                        "speed": 266,
+                        "focal35mm": 26
+                    }
+                },
+                {
+                    "url": "photos/iphone_13_2.jpeg",
+                    "date": {
+                        "month": 1,
+                        "year": 2023
+                    },
+                    "location": {
+                        "town": "Liège",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "iPhone 13",
+                        "make": "Apple"
+                    },
+                    "settings": {
+                        "fnumber": 1.6,
+                        "speed": 33,
+                        "focal35mm": 26
+                    }
+                },
+                {
+                    "url": "photos/iphone_13_3.jpeg",
+                    "date": {
+                        "month": 10,
+                        "year": 2023
+                    },
+                    "location": {
+                        "town": "Cap Gris-Nez",
+                        "country": "France"
+                    },
+                    "camera": {
+                        "model": "iPhone 13",
+                        "make": "Apple"
+                    },
+                    "settings": {
+                        "fnumber": 1.6,
+                        "speed": 13,
+                        "focal35mm": 26
+                    }
+                },
+                {
+                    "url": "photos/iphone_13_4.jpeg",
+                    "date": {
+                        "month": 1,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Cadzand",
+                        "country": "The Netherlands"
+                    },
+                    "camera": {
+                        "model": "iPhone 13",
+                        "make": "Apple"
+                    },
+                    "settings": {
+                        "fnumber": 1.6,
+                        "speed": 1129,
+                        "focal35mm": 26
+                    }
+                },
+                {
+                    "url": "photos/iphone_13_5.jpeg",
+                    "date": {
+                        "month": 8,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Oosterscheldekering",
+                        "country": "The Netherlands"
+                    },
+                    "camera": {
+                        "model": "iPhone 13",
+                        "make": "Apple"
+                    },
+                    "settings": {
+                        "fnumber": 1.6,
+                        "speed": 6173,
+                        "focal35mm": 26
+                    }
+                },
+                {
+                    "url": "photos/iphone_13_6.jpeg",
+                    "date": {
+                        "month": 9,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Halifax",
+                        "country": "Canada"
+                    },
+                    "camera": {
+                        "model": "iPhone 13",
+                        "make": "Apple"
+                    },
+                    "settings": {
+                        "fnumber": 1.6,
+                        "speed": 2101,
+                        "focal35mm": 26
+                    }
+                },
+                {
+                    "url": "photos/iphone_13_7.jpeg",
+                    "date": {
+                        "month": 9,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Nieuwpoort",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "iPhone 13",
+                        "make": "Apple"
+                    },
+                    "settings": {
+                        "fnumber": 1.6,
+                        "speed": 1721,
+                        "focal35mm": 26
+                    }
+                },
+                {
+                    "url": "photos/iphone_13_8.jpeg",
+                    "date": {
+                        "month": 9,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Nieuwpoort",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "iPhone 13",
+                        "make": "Apple"
+                    },
+                    "settings": {
+                        "fnumber": 1.6,
+                        "speed": 684,
+                        "focal35mm": 26
+                    }
+                }
+            ]
+        }
+    ]
+}
