@@ -287,6 +287,26 @@
             "title": "Other",
             "photos": [
                 {
+                    "url": "photos/iphone_13_8.jpeg",
+                    "date": {
+                        "month": 9,
+                        "year": 2024
+                    },
+                    "location": {
+                        "town": "Nieuwpoort",
+                        "country": "Belgium"
+                    },
+                    "camera": {
+                        "model": "iPhone 13",
+                        "make": "Apple"
+                    },
+                    "settings": {
+                        "fnumber": 1.6,
+                        "speed": 684,
+                        "focal35mm": 26
+                    }
+                },
+                {
                     "url": "photos/iphone_13_0.jpeg",
                     "date": {
                         "month": 10,
@@ -443,26 +463,6 @@
                     "settings": {
                         "fnumber": 1.6,
                         "speed": 1721,
-                        "focal35mm": 26
-                    }
-                },
-                {
-                    "url": "photos/iphone_13_8.jpeg",
-                    "date": {
-                        "month": 9,
-                        "year": 2024
-                    },
-                    "location": {
-                        "town": "Nieuwpoort",
-                        "country": "Belgium"
-                    },
-                    "camera": {
-                        "model": "iPhone 13",
-                        "make": "Apple"
-                    },
-                    "settings": {
-                        "fnumber": 1.6,
-                        "speed": 684,
                         "focal35mm": 26
                     }
                 }
